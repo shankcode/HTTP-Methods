@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>API Working using Express</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div class="header">
+        <h1>Small API using Express</h1>
+      </div>
+
+      <div class="requests">
+        <h2>HTTP Requests</h2>
+
+        <div class="select-method">
+          <div class="method">
+            <h3>Method</h3>
+            <select id="dropdown-method" name="HTTP Methods">
+              <option value="GET">GET</option>
+              <option value="POST">POST</option>
+              <option value="PUT">PUT</option>
+              <option value="DELETE">DELETE</option>
+            </select>
+          </div>
+          <div class="path">
+            <h3>Path</h3>
+            <input type="text" name="Path" value="">
+          </div>
+        </div>
+
+        <div class="post-method-details">
+          <div class="input-name">
+            <h3>Name <span>(for POST)</span></h3>
+            <input id="name" type="text" name="name" value="">
+          </div>
+          <div class="input-id">
+            <h3>ID <span>(for POST)</span></h3>
+            <input id="id" type="text" name="id" value="">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="response">
+        <h2>Response from Server</h2>
+        <div class="status-code">
+          <h3>Status Code</h3>
+          <div class="value">     </div>
+        </div>
+        <div class="response-body">
+          <h3>Response Body</h3>
+          <div class="value">     </div>
+        </div>
+      </div>
+
+    </div>
+    <script type="text/javascript" src="./index.js">    </script>
+  </body>
+
+  <footer>
+    <div class="container">
+      <div class="author">
+        <h4> <i class="fa fa-copyright"></i> 2018 <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by <a href="https://shashanky.com" target="_blank">Shashank Yadav</a></h4>
+      </div>
+      <div class="social">
+        <a href="https://facebook.com/shank5060" target="_blank"><i class="fa fa-facebook-f"></i></a>
+        <a href="https://github.com/shankcode" target="_blank"><i class="fa fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</html>
