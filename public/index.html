@@ -30,23 +30,23 @@
           </div>
           <div class="path">
             <h3>Path</h3>
-            <input type="text" name="Path" value="">
+            <input type="text" id="path"/>
           </div>
         </div>
 
         <div class="post-method-details">
           <div class="input-name">
-            <h3>Name <span>(for POST)</span></h3>
-            <input id="name" type="text" name="name" value="">
+            <h3>First Name <span>(for POST)</span></h3>
+            <input id="fname" type="text" name="name" value=""/>
           </div>
           <div class="input-id">
-            <h3>ID <span>(for POST)</span></h3>
-            <input id="id" type="text" name="id" value="">
+            <h3>Last Name <span>(for POST)</span></h3>
+            <input id="lname" type="text" name="id" value=""/>
           </div>
         </div>
 
         <div class="button">
-          <button id="btn" type="button" name="button">Action...</button>
+          <button id="btn" type="button">Send Request</button>
         </div>
 
       </div>
@@ -55,16 +55,23 @@
         <h2>Response from Server</h2>
         <div class="status-code">
           <h3>Status Code</h3>
-          <div class="value">     </div>
+          <div class="value" id="status-code">     </div>
         </div>
         <div class="response-body">
           <h3>Response Body</h3>
-          <div class="value">     </div>
+          <div class="value" id="response-body">     </div>
         </div>
       </div>
 
     </div>
+
+    <h3 id='res'></h3>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
     <script type="text/javascript" src="./index.js">    </script>
+
   </body>
 
   <footer>
