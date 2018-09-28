@@ -64,10 +64,14 @@ span {
 
 #btn {
   margin-top: 50px;
-  width: 150px;
-  height: 60px;
-  border-radius: 5px;
+  width: 200px;
+  height: 40px;
+  border-radius: 8px;
   font-size: 25px;
+}
+
+#btn:hover {
+  text-shadow: 2px 2px #d3d3d3;
 }
 
 .response {
@@ -91,16 +95,24 @@ span {
 
 .response .status-code .value {
   background-color: white;
-  border: 1px solid black;
-  height: 200px;
-  width: 200px;
+  border: 1.5px solid black;
+  min-height: 60px;
+  max-height: 100px;
+  min-width: 200px;
+  padding-top: 2rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
 }
 
 .response .response-body .value {
   background-color: white;
-  border: 1px solid black;
-  height: 200px;
-  width: 200px;
+  border: 2px solid black;
+  min-height: 70px;
+  min-width: 160px;
+  max-width: 300px;
+  padding: 1rem 1rem;
+  overflow: scroll;
 }
 
 footer .container {
