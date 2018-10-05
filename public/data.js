@@ -110,7 +110,11 @@ var friends_list = {
         "contact": [129, 678, 459, 3]
       }
     }
+  },
+"newFriends": {
+
   }
 }
+
 
 module.exports = friends_list;

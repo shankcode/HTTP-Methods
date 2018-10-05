@@ -3,18 +3,20 @@ body {
 }
 
 h2 {
+  font-family: Helvetica;
   font-size: 35px;
   text-align: center;
 }
 
 h3 {
+  font-family: Helvetica;
   margin-top: 40px;
   text-align: center;
 }
 
 input {
-  width: 250px;
-  height: 50px;
+  width: 150px;
+  height: 40px;
   border-radius: 5px;
   font-size: 20px;
 }
@@ -50,7 +52,7 @@ span {
 .select-method, .post-method-details {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-left: 150px;
   padding-right: 150px;
 }
@@ -72,6 +74,14 @@ span {
 
 #btn:hover {
   text-shadow: 2px 2px #d3d3d3;
+  border-left: 5px solid red;
+  border-right: 5px solid red;
+}
+
+#body {
+  height: 40px;
+  margin-bottom: 45px;
+  font-size: 1.5rem;
 }
 
 .response {
@@ -109,9 +119,11 @@ span {
   background-color: white;
   border: 2px solid black;
   min-height: 70px;
+  max-height: 800px;
   min-width: 160px;
-  max-width: 300px;
+  max-width: 400px;
   padding: 1rem 1rem;
+  font-weight: bold;
   overflow: scroll;
 }
 
@@ -134,9 +146,18 @@ footer .container {
 
 .social a {
   font-size: 30px;
+  font-family: Helvetica;
   color: black;
+  padding: 15px;
 }
 
 .author h4 a {
  color: red;
+}
+
+@media only screen and (max-width: 650px) {
+  .response, .select-method, .post-method-details {
+    display: flex;
+    flex-direction: column;
+  }
 }

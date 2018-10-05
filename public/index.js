@@ -5,6 +5,11 @@ $(document).ready( () => {
     var path = $('#path').val();
     console.log(method, path);
 
+    if (!path) {
+      alert('Path is required, Enter "friends" to start');
+      exit();
+    }
+
     if (path.charAt(0) === '/') {
       path = path.substring(1);
     }
@@ -13,7 +18,10 @@ $(document).ready( () => {
       const body = {
         friend: {
           name: $('#fname').val(),
-          lastname: $('#lname').val()
+          lastname: $('#lname').val(),
+          occupation: $('#occupation').val(),
+          place: $("#place").val(),
+          contact: $("#contact").val()
         }
       }
       $.ajax({
@@ -39,10 +47,17 @@ $(document).ready( () => {
       });
     }
     e.preventDefault();
+    $('#dropdown-method').val("GET");
+    $('#path').val('');
+    $('#fname').val('');
+    $('#lname').val('');
+    $('#occupation').val('');
+    $("#place").val('');
+    $("#contact").val('');
   });
 });
 
 function handleSuccess(response, status, jqxhr) {
   $('#status-code').text(jqxhr.status);
   $('#response-body').text(JSON.stringify(response, null, 4));
-}
+};

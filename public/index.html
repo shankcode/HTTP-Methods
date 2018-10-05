@@ -12,7 +12,7 @@
     <div class="container">
 
       <div class="header">
-        <h1>Small API Requests Using Express.js</h1>
+        <h1>HTTP Requests Using Express.js</h1>
       </div>
 
       <div class="requests">
@@ -34,14 +34,30 @@
           </div>
         </div>
 
+        <div id="body">
+          <h3>Body</h3>
+        </div>
+
         <div class="post-method-details">
           <div class="input-name">
-            <h3>First Name <span>(for POST)</span></h3>
+            <h4>First Name<span>(for POST)</span></h4>
             <input id="fname" type="text" name="name" value=""/>
           </div>
           <div class="input-id">
-            <h3>Last Name <span>(for POST)</span></h3>
+            <h4>Last Name<span>(for POST)</span></h4>
             <input id="lname" type="text" name="id" value=""/>
+          </div>
+          <div class="occupation">
+            <h4>Occupation<span>(for POST)</span></h4>
+            <input id="occupation" type="text" name="id" value=""/>
+          </div>
+          <div class="place">
+            <h4>Place<span>(for POST)</span></h4>
+            <input id="place" type="text" name="id" value=""/>
+          </div>
+          <div class="contact">
+            <h4>Contact<span>(for POST)</span></h4>
+            <input id="contact" type="text" name="id" value=""/>
           </div>
         </div>
 
@@ -55,11 +71,11 @@
         <h2>Response from Server</h2>
         <div class="status-code">
           <h3>Status Code</h3>
-          <div class="value" id="status-code">     </div>
+          <div class="value" id="status-code"></div>
         </div>
         <div class="response-body">
           <h3>Response Body</h3>
-          <div class="value" id="response-body">     </div>
+          <pre class="value" id="response-body"></pre>
         </div>
       </div>
 
@@ -80,8 +96,8 @@
         <h4> <i class="fa fa-copyright"></i> 2018 <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by <a href="https://shashanky.com" target="_blank">Shashank Yadav</a></h4>
       </div>
       <div class="social">
-        <a href="https://facebook.com/shank5060" target="_blank"><i class="fa fa-facebook-f"></i></a>
-        <a href="https://github.com/shankcode" target="_blank"><i class="fa fa-github"></i></a>
+          <a href="https://facebook.com/shank5060" target="_blank"><i class="fa fa-facebook-f"></i></a>
+          <a href="https://github.com/shankcode" target="_blank"><i class="fa fa-github"></i></a>
       </div>
     </div>
   </footer>
