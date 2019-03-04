@@ -1,0 +1,123 @@
+{
+  "boys": {
+    "1": {
+      "name": "Sashi",
+      "lastname": "Chaubey",
+      "other_data": {
+        "occupation": "Business",
+        "place": ["Bihar"],
+        "contact": "9998889990"
+      }
+    },
+    "2": {
+      "name": "Nishant",
+      "lastname": "Shah",
+      "other_data": {
+        "occupation": "Business",
+        "place": ["Jharkhand"],
+        "contact": "9978899994"
+      }
+    },
+    "3": {
+      "name": "Sandeep",
+      "lastname": "Kushwaha",
+      "other_data": {
+        "occupation": "Developer",
+        "place": ["Varanasi", "Chennai"],
+        "contact": "9788929336"
+      }
+    },
+    "4": {
+      "name": "Saurav",
+      "lastname": "Kumar",
+      "other_data": {
+        "occupation": "Banker",
+        "place": ["Bihar", "Hyderabad"],
+        "contact": "9237283392"
+      }
+    },
+    "5": {
+      "name": "Nitish",
+      "lastname": "Srivastava",
+      "other_data": {
+        "occupation": "Software Testing",
+        "place": ["Bihar", "Hyderabad"],
+        "contact": "7896784891"
+      }
+    },
+    "6": {
+      "name": "Mohit",
+      "lastname": "Gauda",
+      "other_data": {
+        "occupation": "UI/UX Designer",
+        "place": ["Bhilai", "Chandigarh"],
+        "contact": "9239889793"
+      }
+    },
+    "7": {
+      "name": "Ritesh",
+      "lastname": "Kumar",
+      "other_data": {
+        "occupation": "Application Analyst",
+        "place": ["Bihar", "Coimbator"],
+        "contact": "9673485690"
+      }
+    },
+    "8": {
+      "name": "Shashank",
+      "lastname": "Yadav",
+      "other_data": {
+        "occupation": "complicated!!!",
+        "place": ["Uttar Pradesh", "New Delhi"],
+        "contact": "4593487690"
+      }
+    },
+    "9": {
+      "name": "Puranjan",
+      "lastname": "Das",
+      "other_data": {
+        "occupation": "Not Known",
+        "place": ["New Delhi"],
+        "contact": "2393485490"
+      }
+    }
+  },
+  "girls": {
+    "10": {
+      "name": "Ratna",
+      "lastname": "Gupta",
+      "other_data": {
+        "occupation": "Application Analyst",
+        "place": ["Assam", "Hyderabad"],
+        "contact": "3494581298"
+      }
+    },
+    "11": {
+      "name": "Pooja",
+      "lastname": "Jain",
+      "other_data": {
+        "occupation": "UI/UX Designer",
+        "place": ["Assam"],
+        "contact": "3395489691"
+      }
+    },
+    "12": {
+      "name": "Shaheen",
+      "lastname": "Salam",
+      "other_data": {
+        "occupation": "Designer",
+        "place": ["Port Blair"],
+        "contact": "1296784593"
+      }
+    }
+  },
+  "newFriends": {
+    "13": {
+      "name": "Rohit",
+      "lastname": "Kumar",
+      "occupation": "Application Analyst",
+      "place": "Chennai",
+      "contact": "6757657677"
+    }
+  }
+}

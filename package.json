@@ -1,7 +1,7 @@
 {
-  "name": "expressapp",
-  "version": "1.0.0",
-  "description": "express app",
+  "name": "HTTP-Methods",
+  "version": "1.0.1",
+  "description": "Basic EXPRESS Server to perform CURD operation on data.json file stored on the server",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

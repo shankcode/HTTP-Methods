@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Web Server using Express.js</title>
-    <link rel="stylesheet" href="./style.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
 
   <body>
     <div class="container">
-
       <div class="header">
         <h1>HTTP Requests Using Express.js</h1>
       </div>
@@ -30,7 +31,7 @@
           </div>
           <div class="path">
             <h3>Path</h3>
-            <input type="text" id="path"/>
+            <input type="text" id="path" />
           </div>
         </div>
 
@@ -41,30 +42,29 @@
         <div class="post-method-details">
           <div class="input-name">
             <h4>First Name<span>(for POST)</span></h4>
-            <input id="fname" type="text" name="name" value=""/>
+            <input id="fname" type="text" name="name" value="" />
           </div>
           <div class="input-id">
             <h4>Last Name<span>(for POST)</span></h4>
-            <input id="lname" type="text" name="id" value=""/>
+            <input id="lname" type="text" name="id" value="" />
           </div>
           <div class="occupation">
             <h4>Occupation<span>(for POST)</span></h4>
-            <input id="occupation" type="text" name="id" value=""/>
+            <input id="occupation" type="text" name="id" value="" />
           </div>
           <div class="place">
             <h4>Place<span>(for POST)</span></h4>
-            <input id="place" type="text" name="id" value=""/>
+            <input id="place" type="text" name="id" value="" />
           </div>
           <div class="contact">
             <h4>Contact<span>(for POST)</span></h4>
-            <input id="contact" type="text" name="id" value=""/>
+            <input id="contact" type="text" name="id" value="" />
           </div>
         </div>
 
         <div class="button">
           <button id="btn" type="button">Send Request</button>
         </div>
-
       </div>
 
       <div class="response">
@@ -78,28 +78,34 @@
           <pre class="value" id="response-body"></pre>
         </div>
       </div>
-
     </div>
 
-    <h3 id='res'></h3>
+    <h3 id="res"></h3>
     <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-    <script type="text/javascript" src="./index.js">    </script>
-
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./index.js"></script>
   </body>
 
   <footer>
     <div class="container">
       <div class="author">
-        <h4> <i class="fa fa-copyright"></i> 2018 <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by <a href="https://shashanky.com" target="_blank">Shashank Yadav</a></h4>
+        <h4>
+          <i class="fa fa-copyright"></i> 2018 <i class="fa fa-code"></i> with
+          <i class="fa fa-heart"></i> by
+          <a href="https://shashanky.com" target="_blank">Shashank Yadav</a>
+        </h4>
       </div>
       <div class="social">
-          <a href="https://facebook.com/shank5060" target="_blank"><i class="fa fa-facebook-f"></i></a>
-          <a href="https://github.com/shankcode" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="https://facebook.com/shank5060" target="_blank"
+          ><i class="fa fa-facebook-f"></i
+        ></a>
+        <a href="https://github.com/shankcode" target="_blank"
+          ><i class="fa fa-github"></i
+        ></a>
       </div>
     </div>
   </footer>
-
 </html>
