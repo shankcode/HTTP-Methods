@@ -4,7 +4,7 @@
   "description": "Basic EXPRESS Server to perform CURD operation on data.json file stored on the server",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "author": "Shashank Yadav",
   "license": "ISC",
