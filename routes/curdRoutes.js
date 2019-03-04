@@ -2,14 +2,20 @@ const router = require("express").Router();
 let friends_list = require("../public/data.json");
 let fs = require("fs");
 
-// Generate NextId for adding new entry, nextId = 1 (i.e total id exist + 1)
-let nextId = 1;
-Object.keys(friends_list).forEach(section => {
-  let a = Object.keys(friends_list[section]).length;
-  nextId += a;
-});
-
 //---------------------- Middleware ------------------------//
+
+// Generate NextId for adding new entry, nextId = 1 (i.e total id exist + 1)
+function IdGenerator(req, res, next) {
+  let nextId = 1;
+  Object.keys(friends_list).forEach(section => {
+    let a = Object.keys(friends_list[section]).length;
+    nextId += a;
+  });
+  req.nextId = nextId;
+  next();
+}
+
+//Find friend and his/her section (boys, girls, newFriends)
 router.param("id", (req, res, next, id) => {
   let friendSection = Object.keys(friends_list).find(section => {
     if (Object.keys(friends_list[section]).includes(id)) {
@@ -45,7 +51,7 @@ router.get("/:id", (req, res) => {
 // @route         ::    /friends/
 // @desc          ::    route to ADD FRIEND to list
 // @access        ::    PUBLIC
-router.post("/", (req, res) => {
+router.post("/", IdGenerator, (req, res) => {
   let newdata = req.body;
   console.log(newdata);
   if (
@@ -56,7 +62,7 @@ router.post("/", (req, res) => {
     newdata.contact
   ) {
     //write(append) data to the JSON file
-    friends_list.newFriends[nextId] = newdata;
+    friends_list.newFriends[req.nextId] = newdata;
     fs.writeFile(
       "./public/data.json",
       JSON.stringify(friends_list),
@@ -64,11 +70,11 @@ router.post("/", (req, res) => {
       err => {
         if (err) throw err;
         else {
-          console.log(nextId);
+          console.log(req.nextId);
         }
       }
     );
-    res.status(201).send(friends_list.newFriends[nextId]);
+    res.status(201).send(friends_list.newFriends[req.nextId]);
   } else {
     res.status(404);
   }
